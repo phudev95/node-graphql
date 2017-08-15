@@ -4,7 +4,7 @@
 
 #### Add new conference
 **POST** http://localhost:8080/graphql
-```
+```json
 {
   "query": "mutation ($data: ConferenceInput!) { addConference(data: $data) }",
   "variables": {
@@ -19,7 +19,7 @@
 
 #### Add attendee to conference
 **POST** http://localhost:8080/graphql
-```
+```json
 {
   "query": "mutation ($data: AttendeeInput!) { addAttendee(data: $data) }",
   "variables": {
@@ -34,8 +34,19 @@
 #### Get all of conference
 
 **POST** http://localhost:8080/graphql
-```
+
+```json
 {
-  "query": "query { conferences { name city year attendees } }"
+  "query": "query { conferences { name city year } }"
 }
 ```
+
+#### Get all of conference with attendees
+
+**POST** http://localhost:8080/graphql
+```json
+{
+  "query": "query { conferences { name city year attendees(first: 4) { name } } }"
+}
+```
+

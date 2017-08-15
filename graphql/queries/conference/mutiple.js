@@ -17,6 +17,7 @@ export default {
     return ConferenceModel
       .find()
       .select(projection)
+      .limit(1)
       .exec();
   }
 };

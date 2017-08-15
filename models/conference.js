@@ -13,10 +13,10 @@ const conferenceSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  attendees: {
+  attendees: [{
     type: mongoose.Schema.ObjectId,
-    ref: 'Conference'
-  }
+    ref: 'Attendee'
+  }]
 });
 
 export default mongoose.model('Conference', conferenceSchema);

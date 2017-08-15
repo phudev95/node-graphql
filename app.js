@@ -23,6 +23,7 @@ app.use('/graphiql', graphqlHTTP(req => ({
 mongoose.connect('mongodb://127.0.0.1:27017/node-graphql', {
   useMongoClient: true
 });
+mongoose.set('debug', true);
 
 // start server
 const server = app.listen(8080, () => {
