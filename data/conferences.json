@@ -1,0 +1,34 @@
+{ 
+    "_id" : ObjectId("598ad19fc1217b5b6010e8db"), 
+    "name" : "WWDC", 
+    "city" : "Sane Jose", 
+    "year" : NumberInt(2017), 
+    "__v" : NumberInt(0), 
+    "attendees" : [
+        ObjectId("598ad7b375f05d600039d7b8"), 
+        ObjectId("598ad80875f05d600039d7b9"), 
+        ObjectId("598ad82175f05d600039d7ba"), 
+        ObjectId("598ad82975f05d600039d7bb"), 
+        ObjectId("598ad83975f05d600039d7bc"), 
+        ObjectId("598ad84675f05d600039d7bd"), 
+        ObjectId("598ad85375f05d600039d7be")
+    ]
+}
+{ 
+    "_id" : ObjectId("598ad1ecc1217b5b6010e8dc"), 
+    "name" : "UnitedConf", 
+    "city" : "Minsk", 
+    "year" : NumberInt(2017), 
+    "__v" : NumberInt(0), 
+    "attendees" : [
+        ObjectId("598ad86c75f05d600039d7bf"), 
+        ObjectId("598ad88175f05d600039d7c0")
+    ]
+}
+{ 
+    "_id" : ObjectId("598ad20ec1217b5b6010e8dd"), 
+    "name" : "GraphQL Europe 2017", 
+    "city" : "California", 
+    "year" : NumberInt(2017), 
+    "__v" : NumberInt(0)
+}
